@@ -22,7 +22,6 @@ pipeline{
             sh 'chmod +x bashs/generate_rapport.sh'
             sh './bashs/generate_rapport.sh'
             archiveArtifacts 'rapports/**/*.*'
-            cuc
         }
     }
 }
