@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('installation'){
             steps{
-                sh 'npm i'
+                sh 'npm ci'
             }
         }
         stage('run tests'){
