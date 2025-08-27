@@ -20,7 +20,7 @@ pipeline{
     post{
         always{
             node cucumber-report-generator.js
-            archiveArtifacts artifacts: 'rapports/**'
+            archiveArtifacts 'rapports/**/*.*'
         }
     }
 }
