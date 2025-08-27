@@ -19,7 +19,8 @@ pipeline{
     }
     post{
         always{
-            node cucumber-report-generator.js
+            sh 'chmod +x bashs/generate_rapport.sh'
+            sh './bashs/generate_rapport.sh'
             archiveArtifacts 'rapports/**/*.*'
         }
     }
