@@ -17,10 +17,10 @@ pipeline{
             }
         }
     }
-    post{
-        always{
-            node cucumber-report-generator.js
-            archiveArtifacts artifacts: 'rapports/**'
-        }
-    }
+    // post{
+    //     always{
+    //         node cucumber-report-generator.js
+    //         archiveArtifacts artifacts: 'rapports/**'
+    //     }
+    // }
 }
